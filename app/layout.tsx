@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import AppNavbar from "@/components/shared/app-navbar";
+import AppFooter from "@/components/shared/app-footer";
 
 const defaultFont = Montserrat({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${defaultFont.className} antialiased container mx-auto min-h-dvh flex flex-col text-sm`}
+        className={`${defaultFont.className} antialiased min-h-dvh flex flex-col text-sm`}
       >
         <ThemeProvider
           attribute="class"
@@ -30,7 +31,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <AppNavbar />
-          <main className="flex-1 pt-14">{children}</main>
+          <main className="flex-1 pt-14 container mx-auto">{children}</main>
+          <AppFooter />
         </ThemeProvider>
       </body>
     </html>

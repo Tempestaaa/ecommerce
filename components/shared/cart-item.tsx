@@ -18,9 +18,9 @@ export default function CartItem() {
         <Image src="/image.jpg" alt="Book's cover" fill />
       </ItemMedia>
 
-      <ItemContent>
-        <ItemHeader className="flex-col items-start gap-1">
-          <ItemTitle className="font-bold line-clamp-1">Book name</ItemTitle>
+      <ItemContent className="ml-2">
+        <ItemHeader className="flex-col items-start gap-0.5">
+          <ItemTitle className="line-clamp-1">Book name</ItemTitle>
           <ItemDescription>$10 x2</ItemDescription>
 
           <div className="flex items-center gap-2 *:size-3.5 *:cursor-pointer *:text-muted-foreground *:hover:text-foreground *:transition-colors *:duration-300">

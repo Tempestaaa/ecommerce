@@ -27,7 +27,7 @@ export default function CartButton() {
         <Separator />
         <CartItemList />
         <Separator />
-        <SheetFooter className="flex flex-row justify-between">
+        <SheetFooter className="flex md:flex-row justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="text-base font-bold">Subtotal:</span>
             <span>$50.0</span>
