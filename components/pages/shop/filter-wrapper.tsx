@@ -18,7 +18,7 @@ export default function FilterWrapper({ value, label, children }: Props) {
       type="single"
       defaultValue={value}
       collapsible
-      className="px-4 border rounded-md"
+      className="px-4 border rounded-md bg-card"
     >
       <AccordionItem value={value}>
         <AccordionTrigger>{label}</AccordionTrigger>

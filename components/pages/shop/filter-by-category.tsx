@@ -2,11 +2,14 @@ import FilterItem from "@/components/pages/shop/filter-item";
 import FilterWrapper from "@/components/pages/shop/filter-wrapper";
 
 const categories = [
-  { label: "Laptop & PC", inStock: 2 },
-  { label: "Mobile & Tablets", inStock: 5 },
-  { label: "Televisions", inStock: 9 },
-  { label: "Games & Videos", inStock: 10 },
-  { label: "Home Appliances", inStock: 3 },
+  { label: "Fiction", inStock: 245 },
+  { label: "Mystery & Thriller", inStock: 187 },
+  { label: "Science Fiction", inStock: 132 },
+  { label: "Fantasy", inStock: 164 },
+  { label: "Romance", inStock: 208 },
+  { label: "Non‑fiction", inStock: 96 },
+  { label: "Self‑Help & Personal Growth", inStock: 74 },
+  { label: "Biography & Memoir", inStock: 51 },
 ];
 
 export default function FilterByCategory() {

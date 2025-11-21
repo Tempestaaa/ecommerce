@@ -1,4 +1,4 @@
-import CartItemList from "@/components/shared/cart-item-list";
+import CartList from "@/components/shared/cart-list";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -24,18 +24,22 @@ export default function CartButton() {
         <SheetHeader>
           <SheetTitle className="text-xl font-bold">Shopping Cart</SheetTitle>
         </SheetHeader>
+
         <Separator />
-        <CartItemList />
+
+        <CartList />
+
         <Separator />
-        <SheetFooter className="flex md:flex-row justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-base font-bold">Subtotal:</span>
-            <span>$50.0</span>
+
+        <SheetFooter className="flex md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="text-muted-foreground text-xs">Total</span>
+            <span className="font-bold text-base">$50.00</span>
           </div>
 
-          <Button>
-            <span>Checkout</span>
-            <ArrowRight />
+          <Button className="group/btn">
+            <span className="">Checkout</span>
+            <ArrowRight className="size-4 group-hover/btn:translate-x-1 transition-transform" />
           </Button>
         </SheetFooter>
       </SheetContent>
